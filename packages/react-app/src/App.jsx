@@ -43,9 +43,9 @@ const web3Modal = Web3ModalSetup();
 
 // 🛰 providers
 const providers = [
-  "https://eth-mainnet.gateway.pokt.network/v1/lb/611156b4a585a20035148406",
-  `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_KEY}`,
-  "https://rpc.scaffoldeth.io:48544",
+  "https://dogechain.ankr.com",
+  `https://rpc.dogechain.dog`,
+  "https://rpc03-sg.dogechain.dog",
 ];
 
 function App() {
@@ -82,7 +82,8 @@ function App() {
   };
 
   /* 💵 This hook will get the price of ETH from 🦄 Uniswap: */
-  const price = useExchangeEthPrice(targetNetwork, mainnetProvider, mainnetProviderPollingTime);
+  //const price = useExchangeEthPrice(targetNetwork, mainnetProvider, mainnetProviderPollingTime);
+  const price = 0.11;
 
   // Use your injected provider from 🦊 Metamask or if you don't have it then instantly generate a 🔥 burner wallet.
   const userProviderAndSigner = useUserProviderAndSigner(injectedProvider, localProvider, USE_BURNER_WALLET);
@@ -216,7 +217,7 @@ function App() {
             Built with <HeartFilled /> at 🏰{" "}
             <a href="https://buidlguidl.com/" target="_blank" rel="noreferrer">
               BuidlGuidl
-            </a>
+            </a>, Forked with <HeartFilled /> By <a href="https://t.me/Poodogechain">PooDoge</a>
           </p>
         </div>
       </div>

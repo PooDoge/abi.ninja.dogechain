@@ -12,16 +12,20 @@ const { Panel } = Collapse;
 
 const quickAccessContracts = [
   {
-    name: "DAI",
-    address: "0x6b175474e89094c44da98b954eedeac495271d0f",
+    name: "Poo Doge Contract",
+    address: "0x3f4aE49EABEa4cc250a640eEa788a321C0AE7EB2",
   },
   {
-    name: "Gitcoin",
-    address: "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
+    name: "Kibbleswap Router",
+    address: "0x6258c967337D3faF0C2ba3ADAe5656bA95419d5f",
   },
   {
-    name: "Opensea Seaport",
-    address: "0x00000000006c3852cbef3e08e8df289169ede581",
+    name: "Dogeswap Router",
+    address: "0xa4ee06ce40cb7e8c04e127c1f7d3dfb7f7039c81",
+  },
+  {
+    name: "Yodeswap Router",
+    address: "0xAaA04462e35f3e40D798331657cA015169e005d7",
   },
 ];
 
@@ -145,10 +149,10 @@ function Homepage({
   return (
     <div className="index-container">
       <div className="logo">
-        <img src="/logo_inv.svg" alt="logo" />
+        <img src="/ninjalogo_inv.png" alt="logo" />
       </div>
       <div className="lead-text">
-        <p>Interact with any contract on Ethereum.</p>
+        <p>Interact with any contract on Dogechain.</p>
       </div>
       <div className="network-selector center">
         <p>{networkSelect}</p>
@@ -205,7 +209,7 @@ function Homepage({
           </div>
         </Panel>
       </Collapse>
-      {selectedNetwork.chainId === 1 && (
+      {selectedNetwork.chainId === 2000 && (
         <div className="quick-access">
           <h3>Quick Access</h3>
           <ul>

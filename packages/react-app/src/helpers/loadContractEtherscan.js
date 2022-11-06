@@ -23,11 +23,11 @@ export const loadContractEtherscan = async (address, selectedNetwork, userSigner
   try {
     response = await etherscanClient.contract.getabi(address);
   } catch (e) {
-    throw new Error(`Etherscan API: ${e}`);
+    throw new Error(`Dogechain Explorer API: ${e}`);
   }
 
   if (response.status !== "1") {
-    throw new Error("Can't fetch data from Etherscan. Ensure the contract is verified.");
+    throw new Error("Can't fetch data from Dogechain Explorer. Ensure the contract is verified.");
   }
 
   const contractAbi = response.result;

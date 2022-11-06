@@ -15,7 +15,6 @@
       "**/build/": true,
       "**/debug/": true,
       "**/dist/": true,
-      "**/node_modules/": true,
       "**/obj": true,
       "yarn-error.log": true,
       "**/yarn-error.log": true,
