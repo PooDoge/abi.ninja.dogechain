@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeSwitcherProvider } from "react-css-theme-switcher";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "antd/dist/antd.css";
@@ -15,9 +15,9 @@ const prevTheme = window.localStorage.getItem("theme");
 
 ReactDOM.render(
   <ThemeSwitcherProvider themeMap={themes} defaultTheme={prevTheme || "light"}>
-    <BrowserRouter>
+    <HashRouter hashType="slash">
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </ThemeSwitcherProvider>,
   document.getElementById("root"),
 );
